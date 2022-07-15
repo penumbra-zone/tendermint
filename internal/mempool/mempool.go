@@ -9,13 +9,13 @@ import (
 	"sync/atomic"
 	"time"
 
-	abciclient "github.com/tendermint/tendermint/abci/client"
-	abci "github.com/tendermint/tendermint/abci/types"
-	"github.com/tendermint/tendermint/config"
-	"github.com/tendermint/tendermint/internal/libs/clist"
-	"github.com/tendermint/tendermint/libs/log"
-	tmmath "github.com/tendermint/tendermint/libs/math"
-	"github.com/tendermint/tendermint/types"
+	abciclient "github.com/penumbra-zone/tendermint/abci/client"
+	abci "github.com/penumbra-zone/tendermint/abci/types"
+	"github.com/penumbra-zone/tendermint/config"
+	"github.com/penumbra-zone/tendermint/internal/libs/clist"
+	"github.com/penumbra-zone/tendermint/libs/log"
+	tmmath "github.com/penumbra-zone/tendermint/libs/math"
+	"github.com/penumbra-zone/tendermint/types"
 )
 
 var _ Mempool = (*TxMempool)(nil)

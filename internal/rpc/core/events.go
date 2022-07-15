@@ -6,13 +6,13 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/tendermint/tendermint/internal/eventlog"
-	"github.com/tendermint/tendermint/internal/eventlog/cursor"
-	"github.com/tendermint/tendermint/internal/jsontypes"
-	tmpubsub "github.com/tendermint/tendermint/internal/pubsub"
-	tmquery "github.com/tendermint/tendermint/internal/pubsub/query"
-	"github.com/tendermint/tendermint/rpc/coretypes"
-	rpctypes "github.com/tendermint/tendermint/rpc/jsonrpc/types"
+	"github.com/penumbra-zone/tendermint/internal/eventlog"
+	"github.com/penumbra-zone/tendermint/internal/eventlog/cursor"
+	"github.com/penumbra-zone/tendermint/internal/jsontypes"
+	tmpubsub "github.com/penumbra-zone/tendermint/internal/pubsub"
+	tmquery "github.com/penumbra-zone/tendermint/internal/pubsub/query"
+	"github.com/penumbra-zone/tendermint/rpc/coretypes"
+	rpctypes "github.com/penumbra-zone/tendermint/rpc/jsonrpc/types"
 )
 
 const (

@@ -10,14 +10,14 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/tendermint/tendermint/internal/eventbus"
-	"github.com/tendermint/tendermint/internal/p2p"
-	"github.com/tendermint/tendermint/libs/bytes"
-	tmrand "github.com/tendermint/tendermint/libs/rand"
-	tmtime "github.com/tendermint/tendermint/libs/time"
-	tmcons "github.com/tendermint/tendermint/proto/tendermint/consensus"
-	tmproto "github.com/tendermint/tendermint/proto/tendermint/types"
-	"github.com/tendermint/tendermint/types"
+	"github.com/penumbra-zone/tendermint/internal/eventbus"
+	"github.com/penumbra-zone/tendermint/internal/p2p"
+	"github.com/penumbra-zone/tendermint/libs/bytes"
+	tmrand "github.com/penumbra-zone/tendermint/libs/rand"
+	tmtime "github.com/penumbra-zone/tendermint/libs/time"
+	tmcons "github.com/penumbra-zone/tendermint/proto/tendermint/consensus"
+	tmproto "github.com/penumbra-zone/tendermint/proto/tendermint/types"
+	"github.com/penumbra-zone/tendermint/types"
 )
 
 func TestReactorInvalidPrecommit(t *testing.T) {

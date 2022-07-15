@@ -8,12 +8,12 @@ import (
 	"sync"
 	"time"
 
-	cstypes "github.com/tendermint/tendermint/internal/consensus/types"
-	"github.com/tendermint/tendermint/libs/bits"
-	"github.com/tendermint/tendermint/libs/log"
-	tmtime "github.com/tendermint/tendermint/libs/time"
-	tmproto "github.com/tendermint/tendermint/proto/tendermint/types"
-	"github.com/tendermint/tendermint/types"
+	cstypes "github.com/penumbra-zone/tendermint/internal/consensus/types"
+	"github.com/penumbra-zone/tendermint/libs/bits"
+	"github.com/penumbra-zone/tendermint/libs/log"
+	tmtime "github.com/penumbra-zone/tendermint/libs/time"
+	tmproto "github.com/penumbra-zone/tendermint/proto/tendermint/types"
+	"github.com/penumbra-zone/tendermint/types"
 )
 
 var (
@@ -382,7 +382,7 @@ func (ps *PeerState) setHasVote(height int64, round int32, voteType tmproto.Sign
 	psVotes := ps.getVoteBitArray(height, round, voteType)
 	if psVotes != nil {
 		if ok := psVotes.SetIndex(int(index), true); !ok {
-			// https://github.com/tendermint/tendermint/issues/2871
+			// https://github.com/penumbra-zone/tendermint/issues/2871
 			return ErrPeerStateInvalidVoteIndex
 		}
 	}

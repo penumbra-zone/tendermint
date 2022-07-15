@@ -9,10 +9,10 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/tendermint/tendermint/internal/libs/flowrate"
-	"github.com/tendermint/tendermint/libs/log"
-	"github.com/tendermint/tendermint/libs/service"
-	"github.com/tendermint/tendermint/types"
+	"github.com/penumbra-zone/tendermint/internal/libs/flowrate"
+	"github.com/penumbra-zone/tendermint/libs/log"
+	"github.com/penumbra-zone/tendermint/libs/service"
+	"github.com/penumbra-zone/tendermint/types"
 )
 
 /*

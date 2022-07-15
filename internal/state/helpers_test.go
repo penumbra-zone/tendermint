@@ -11,16 +11,16 @@ import (
 	"github.com/stretchr/testify/require"
 	dbm "github.com/tendermint/tm-db"
 
-	abci "github.com/tendermint/tendermint/abci/types"
-	"github.com/tendermint/tendermint/crypto"
-	"github.com/tendermint/tendermint/crypto/ed25519"
-	"github.com/tendermint/tendermint/crypto/encoding"
-	sm "github.com/tendermint/tendermint/internal/state"
-	sf "github.com/tendermint/tendermint/internal/state/test/factory"
-	"github.com/tendermint/tendermint/internal/test/factory"
-	tmtime "github.com/tendermint/tendermint/libs/time"
-	tmproto "github.com/tendermint/tendermint/proto/tendermint/types"
-	"github.com/tendermint/tendermint/types"
+	abci "github.com/penumbra-zone/tendermint/abci/types"
+	"github.com/penumbra-zone/tendermint/crypto"
+	"github.com/penumbra-zone/tendermint/crypto/ed25519"
+	"github.com/penumbra-zone/tendermint/crypto/encoding"
+	sm "github.com/penumbra-zone/tendermint/internal/state"
+	sf "github.com/penumbra-zone/tendermint/internal/state/test/factory"
+	"github.com/penumbra-zone/tendermint/internal/test/factory"
+	tmtime "github.com/penumbra-zone/tendermint/libs/time"
+	tmproto "github.com/penumbra-zone/tendermint/proto/tendermint/types"
+	"github.com/penumbra-zone/tendermint/types"
 )
 
 type paramsChangeTestCase struct {

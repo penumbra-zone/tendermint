@@ -7,11 +7,11 @@ import (
 	"github.com/stretchr/testify/require"
 	dbm "github.com/tendermint/tm-db"
 
-	"github.com/tendermint/tendermint/internal/state"
-	"github.com/tendermint/tendermint/internal/state/mocks"
-	"github.com/tendermint/tendermint/internal/test/factory"
-	"github.com/tendermint/tendermint/types"
-	"github.com/tendermint/tendermint/version"
+	"github.com/penumbra-zone/tendermint/internal/state"
+	"github.com/penumbra-zone/tendermint/internal/state/mocks"
+	"github.com/penumbra-zone/tendermint/internal/test/factory"
+	"github.com/penumbra-zone/tendermint/types"
+	"github.com/penumbra-zone/tendermint/version"
 )
 
 func TestRollback(t *testing.T) {

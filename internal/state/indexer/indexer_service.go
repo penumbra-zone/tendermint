@@ -4,12 +4,12 @@ import (
 	"context"
 	"time"
 
-	abci "github.com/tendermint/tendermint/abci/types"
-	"github.com/tendermint/tendermint/internal/eventbus"
-	"github.com/tendermint/tendermint/internal/pubsub"
-	"github.com/tendermint/tendermint/libs/log"
-	"github.com/tendermint/tendermint/libs/service"
-	"github.com/tendermint/tendermint/types"
+	abci "github.com/penumbra-zone/tendermint/abci/types"
+	"github.com/penumbra-zone/tendermint/internal/eventbus"
+	"github.com/penumbra-zone/tendermint/internal/pubsub"
+	"github.com/penumbra-zone/tendermint/libs/log"
+	"github.com/penumbra-zone/tendermint/libs/service"
+	"github.com/penumbra-zone/tendermint/types"
 )
 
 // Service connects event bus, transaction and block indexers together in

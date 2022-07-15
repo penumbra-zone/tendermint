@@ -6,12 +6,12 @@ import (
 	"sync"
 	"time"
 
-	"github.com/tendermint/tendermint/internal/p2p"
-	"github.com/tendermint/tendermint/internal/p2p/conn"
-	"github.com/tendermint/tendermint/libs/log"
-	"github.com/tendermint/tendermint/libs/service"
-	protop2p "github.com/tendermint/tendermint/proto/tendermint/p2p"
-	"github.com/tendermint/tendermint/types"
+	"github.com/penumbra-zone/tendermint/internal/p2p"
+	"github.com/penumbra-zone/tendermint/internal/p2p/conn"
+	"github.com/penumbra-zone/tendermint/libs/log"
+	"github.com/penumbra-zone/tendermint/libs/service"
+	protop2p "github.com/penumbra-zone/tendermint/proto/tendermint/p2p"
+	"github.com/penumbra-zone/tendermint/types"
 )
 
 var (

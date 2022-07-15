@@ -12,8 +12,8 @@ import (
 	"github.com/oasisprotocol/curve25519-voi/primitives/ed25519"
 	"github.com/oasisprotocol/curve25519-voi/primitives/ed25519/extra/cache"
 
-	"github.com/tendermint/tendermint/crypto"
-	"github.com/tendermint/tendermint/internal/jsontypes"
+	"github.com/penumbra-zone/tendermint/crypto"
+	"github.com/penumbra-zone/tendermint/internal/jsontypes"
 )
 
 //-------------------------------------

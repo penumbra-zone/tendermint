@@ -12,8 +12,8 @@ import (
 	"strings"
 	"syscall"
 
-	auto "github.com/tendermint/tendermint/internal/libs/autofile"
-	"github.com/tendermint/tendermint/libs/log"
+	auto "github.com/penumbra-zone/tendermint/internal/libs/autofile"
+	"github.com/penumbra-zone/tendermint/libs/log"
 )
 
 const Version = "0.0.1"

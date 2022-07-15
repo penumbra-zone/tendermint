@@ -11,11 +11,11 @@ import (
 	"github.com/google/orderedcode"
 	dbm "github.com/tendermint/tm-db"
 
-	abci "github.com/tendermint/tendermint/abci/types"
-	"github.com/tendermint/tendermint/internal/pubsub/query"
-	"github.com/tendermint/tendermint/internal/pubsub/query/syntax"
-	"github.com/tendermint/tendermint/internal/state/indexer"
-	"github.com/tendermint/tendermint/types"
+	abci "github.com/penumbra-zone/tendermint/abci/types"
+	"github.com/penumbra-zone/tendermint/internal/pubsub/query"
+	"github.com/penumbra-zone/tendermint/internal/pubsub/query/syntax"
+	"github.com/penumbra-zone/tendermint/internal/state/indexer"
+	"github.com/penumbra-zone/tendermint/types"
 )
 
 var _ indexer.BlockIndexer = (*BlockerIndexer)(nil)

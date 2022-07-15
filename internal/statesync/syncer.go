@@ -8,15 +8,15 @@ import (
 	"sync"
 	"time"
 
-	abciclient "github.com/tendermint/tendermint/abci/client"
-	abci "github.com/tendermint/tendermint/abci/types"
-	"github.com/tendermint/tendermint/internal/p2p"
-	"github.com/tendermint/tendermint/internal/proxy"
-	sm "github.com/tendermint/tendermint/internal/state"
-	"github.com/tendermint/tendermint/libs/log"
-	"github.com/tendermint/tendermint/light"
-	ssproto "github.com/tendermint/tendermint/proto/tendermint/statesync"
-	"github.com/tendermint/tendermint/types"
+	abciclient "github.com/penumbra-zone/tendermint/abci/client"
+	abci "github.com/penumbra-zone/tendermint/abci/types"
+	"github.com/penumbra-zone/tendermint/internal/p2p"
+	"github.com/penumbra-zone/tendermint/internal/proxy"
+	sm "github.com/penumbra-zone/tendermint/internal/state"
+	"github.com/penumbra-zone/tendermint/libs/log"
+	"github.com/penumbra-zone/tendermint/light"
+	ssproto "github.com/penumbra-zone/tendermint/proto/tendermint/statesync"
+	"github.com/penumbra-zone/tendermint/types"
 )
 
 const (

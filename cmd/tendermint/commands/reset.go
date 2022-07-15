@@ -6,11 +6,11 @@ import (
 
 	"github.com/spf13/cobra"
 
-	"github.com/tendermint/tendermint/config"
-	"github.com/tendermint/tendermint/libs/log"
-	tmos "github.com/tendermint/tendermint/libs/os"
-	"github.com/tendermint/tendermint/privval"
-	"github.com/tendermint/tendermint/types"
+	"github.com/penumbra-zone/tendermint/config"
+	"github.com/penumbra-zone/tendermint/libs/log"
+	tmos "github.com/penumbra-zone/tendermint/libs/os"
+	"github.com/penumbra-zone/tendermint/privval"
+	"github.com/penumbra-zone/tendermint/types"
 )
 
 // MakeResetCommand constructs a command that removes the database of

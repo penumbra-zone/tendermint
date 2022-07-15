@@ -23,9 +23,9 @@ implementation.
 import (
 	"context"
 
-	"github.com/tendermint/tendermint/libs/bytes"
-	"github.com/tendermint/tendermint/rpc/coretypes"
-	"github.com/tendermint/tendermint/types"
+	"github.com/penumbra-zone/tendermint/libs/bytes"
+	"github.com/penumbra-zone/tendermint/rpc/coretypes"
+	"github.com/penumbra-zone/tendermint/types"
 )
 
 //go:generate ../../scripts/mockery_generate.sh Client

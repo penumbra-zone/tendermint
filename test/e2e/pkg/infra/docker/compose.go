@@ -4,7 +4,7 @@ import (
 	"bytes"
 	"text/template"
 
-	e2e "github.com/tendermint/tendermint/test/e2e/pkg"
+	e2e "github.com/penumbra-zone/tendermint/test/e2e/pkg"
 )
 
 // makeDockerCompose generates a Docker Compose config for a testnet.

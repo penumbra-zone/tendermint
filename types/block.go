@@ -11,13 +11,13 @@ import (
 	"github.com/gogo/protobuf/proto"
 	gogotypes "github.com/gogo/protobuf/types"
 
-	"github.com/tendermint/tendermint/crypto"
-	"github.com/tendermint/tendermint/crypto/merkle"
-	"github.com/tendermint/tendermint/libs/bits"
-	tmbytes "github.com/tendermint/tendermint/libs/bytes"
-	tmmath "github.com/tendermint/tendermint/libs/math"
-	tmproto "github.com/tendermint/tendermint/proto/tendermint/types"
-	"github.com/tendermint/tendermint/version"
+	"github.com/penumbra-zone/tendermint/crypto"
+	"github.com/penumbra-zone/tendermint/crypto/merkle"
+	"github.com/penumbra-zone/tendermint/libs/bits"
+	tmbytes "github.com/penumbra-zone/tendermint/libs/bytes"
+	tmmath "github.com/penumbra-zone/tendermint/libs/math"
+	tmproto "github.com/penumbra-zone/tendermint/proto/tendermint/types"
+	"github.com/penumbra-zone/tendermint/version"
 )
 
 const (
@@ -328,7 +328,7 @@ func MakeBlock(height int64, txs []Tx, lastCommit *Commit, evidence []Evidence) 
 // NOTE: changes to the Header should be duplicated in:
 // - header.Hash()
 // - abci.Header
-// - https://github.com/tendermint/tendermint/blob/master/spec/core/data_structures.md
+// - https://github.com/penumbra-zone/tendermint/blob/master/spec/core/data_structures.md
 type Header struct {
 	// basic block info
 	Version version.Consensus `json:"version"`

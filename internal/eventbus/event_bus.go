@@ -5,12 +5,12 @@ import (
 	"fmt"
 	"strings"
 
-	abci "github.com/tendermint/tendermint/abci/types"
-	tmpubsub "github.com/tendermint/tendermint/internal/pubsub"
-	tmquery "github.com/tendermint/tendermint/internal/pubsub/query"
-	"github.com/tendermint/tendermint/libs/log"
-	"github.com/tendermint/tendermint/libs/service"
-	"github.com/tendermint/tendermint/types"
+	abci "github.com/penumbra-zone/tendermint/abci/types"
+	tmpubsub "github.com/penumbra-zone/tendermint/internal/pubsub"
+	tmquery "github.com/penumbra-zone/tendermint/internal/pubsub/query"
+	"github.com/penumbra-zone/tendermint/libs/log"
+	"github.com/penumbra-zone/tendermint/libs/service"
+	"github.com/penumbra-zone/tendermint/types"
 )
 
 // Subscription is a proxy interface for a pubsub Subscription.

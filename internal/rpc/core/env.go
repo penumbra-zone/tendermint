@@ -11,25 +11,25 @@ import (
 
 	"github.com/rs/cors"
 
-	abciclient "github.com/tendermint/tendermint/abci/client"
-	"github.com/tendermint/tendermint/config"
-	"github.com/tendermint/tendermint/crypto"
-	"github.com/tendermint/tendermint/internal/blocksync"
-	"github.com/tendermint/tendermint/internal/consensus"
-	"github.com/tendermint/tendermint/internal/eventbus"
-	"github.com/tendermint/tendermint/internal/eventlog"
-	"github.com/tendermint/tendermint/internal/libs/strings"
-	"github.com/tendermint/tendermint/internal/mempool"
-	"github.com/tendermint/tendermint/internal/p2p"
-	tmpubsub "github.com/tendermint/tendermint/internal/pubsub"
-	"github.com/tendermint/tendermint/internal/pubsub/query"
-	sm "github.com/tendermint/tendermint/internal/state"
-	"github.com/tendermint/tendermint/internal/state/indexer"
-	"github.com/tendermint/tendermint/internal/statesync"
-	"github.com/tendermint/tendermint/libs/log"
-	"github.com/tendermint/tendermint/rpc/coretypes"
-	rpcserver "github.com/tendermint/tendermint/rpc/jsonrpc/server"
-	"github.com/tendermint/tendermint/types"
+	abciclient "github.com/penumbra-zone/tendermint/abci/client"
+	"github.com/penumbra-zone/tendermint/config"
+	"github.com/penumbra-zone/tendermint/crypto"
+	"github.com/penumbra-zone/tendermint/internal/blocksync"
+	"github.com/penumbra-zone/tendermint/internal/consensus"
+	"github.com/penumbra-zone/tendermint/internal/eventbus"
+	"github.com/penumbra-zone/tendermint/internal/eventlog"
+	"github.com/penumbra-zone/tendermint/internal/libs/strings"
+	"github.com/penumbra-zone/tendermint/internal/mempool"
+	"github.com/penumbra-zone/tendermint/internal/p2p"
+	tmpubsub "github.com/penumbra-zone/tendermint/internal/pubsub"
+	"github.com/penumbra-zone/tendermint/internal/pubsub/query"
+	sm "github.com/penumbra-zone/tendermint/internal/state"
+	"github.com/penumbra-zone/tendermint/internal/state/indexer"
+	"github.com/penumbra-zone/tendermint/internal/statesync"
+	"github.com/penumbra-zone/tendermint/libs/log"
+	"github.com/penumbra-zone/tendermint/rpc/coretypes"
+	rpcserver "github.com/penumbra-zone/tendermint/rpc/jsonrpc/server"
+	"github.com/penumbra-zone/tendermint/types"
 )
 
 const (
@@ -235,7 +235,7 @@ func (env *Environment) StartService(ctx context.Context, conf *config.Config) (
 	cfg.MaxOpenConnections = conf.RPC.MaxOpenConnections
 	// If necessary adjust global WriteTimeout to ensure it's greater than
 	// TimeoutBroadcastTxCommit.
-	// See https://github.com/tendermint/tendermint/issues/3435
+	// See https://github.com/penumbra-zone/tendermint/issues/3435
 	// Note we don't need to adjust anything if the timeout is already unlimited.
 	if cfg.WriteTimeout > 0 && cfg.WriteTimeout <= conf.RPC.TimeoutBroadcastTxCommit {
 		cfg.WriteTimeout = conf.RPC.TimeoutBroadcastTxCommit + 1*time.Second

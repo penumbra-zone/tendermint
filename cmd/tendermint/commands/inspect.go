@@ -6,9 +6,9 @@ import (
 
 	"github.com/spf13/cobra"
 
-	"github.com/tendermint/tendermint/config"
-	"github.com/tendermint/tendermint/internal/inspect"
-	"github.com/tendermint/tendermint/libs/log"
+	"github.com/penumbra-zone/tendermint/config"
+	"github.com/penumbra-zone/tendermint/internal/inspect"
+	"github.com/penumbra-zone/tendermint/libs/log"
 )
 
 // InspectCmd constructs the command to start an inspect server.

@@ -4,7 +4,7 @@ import (
 	"context"
 	"path/filepath"
 
-	"github.com/tendermint/tendermint/test/e2e/pkg/exec"
+	"github.com/penumbra-zone/tendermint/test/e2e/pkg/exec"
 )
 
 // execCompose runs a Docker Compose command for a testnet.

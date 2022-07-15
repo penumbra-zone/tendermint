@@ -7,9 +7,9 @@ import (
 	"strconv"
 	"strings"
 
-	tmstrings "github.com/tendermint/tendermint/internal/libs/strings"
-	"github.com/tendermint/tendermint/libs/bytes"
-	tmp2p "github.com/tendermint/tendermint/proto/tendermint/p2p"
+	tmstrings "github.com/penumbra-zone/tendermint/internal/libs/strings"
+	"github.com/penumbra-zone/tendermint/libs/bytes"
+	tmp2p "github.com/penumbra-zone/tendermint/proto/tendermint/p2p"
 )
 
 const (

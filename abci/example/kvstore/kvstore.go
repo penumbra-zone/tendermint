@@ -13,12 +13,12 @@ import (
 
 	dbm "github.com/tendermint/tm-db"
 
-	"github.com/tendermint/tendermint/abci/example/code"
-	"github.com/tendermint/tendermint/abci/types"
-	"github.com/tendermint/tendermint/crypto/encoding"
-	"github.com/tendermint/tendermint/libs/log"
-	cryptoproto "github.com/tendermint/tendermint/proto/tendermint/crypto"
-	"github.com/tendermint/tendermint/version"
+	"github.com/penumbra-zone/tendermint/abci/example/code"
+	"github.com/penumbra-zone/tendermint/abci/types"
+	"github.com/penumbra-zone/tendermint/crypto/encoding"
+	"github.com/penumbra-zone/tendermint/libs/log"
+	cryptoproto "github.com/penumbra-zone/tendermint/proto/tendermint/crypto"
+	"github.com/penumbra-zone/tendermint/version"
 )
 
 var (

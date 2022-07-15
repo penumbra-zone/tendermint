@@ -11,10 +11,10 @@ import (
 
 	"github.com/spf13/cobra"
 
-	"github.com/tendermint/tendermint/libs/log"
-	e2e "github.com/tendermint/tendermint/test/e2e/pkg"
-	"github.com/tendermint/tendermint/test/e2e/pkg/infra"
-	"github.com/tendermint/tendermint/test/e2e/pkg/infra/docker"
+	"github.com/penumbra-zone/tendermint/libs/log"
+	e2e "github.com/penumbra-zone/tendermint/test/e2e/pkg"
+	"github.com/penumbra-zone/tendermint/test/e2e/pkg/infra"
+	"github.com/penumbra-zone/tendermint/test/e2e/pkg/infra/docker"
 )
 
 const randomSeed = 2308084734268

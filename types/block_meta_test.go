@@ -5,8 +5,8 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/tendermint/tendermint/crypto"
-	tmrand "github.com/tendermint/tendermint/libs/rand"
+	"github.com/penumbra-zone/tendermint/crypto"
+	tmrand "github.com/penumbra-zone/tendermint/libs/rand"
 )
 
 func TestBlockMeta_ToProto(t *testing.T) {

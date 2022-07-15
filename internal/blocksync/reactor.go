@@ -8,16 +8,16 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/tendermint/tendermint/internal/consensus"
-	"github.com/tendermint/tendermint/internal/eventbus"
-	"github.com/tendermint/tendermint/internal/p2p"
-	"github.com/tendermint/tendermint/internal/p2p/conn"
-	sm "github.com/tendermint/tendermint/internal/state"
-	"github.com/tendermint/tendermint/internal/store"
-	"github.com/tendermint/tendermint/libs/log"
-	"github.com/tendermint/tendermint/libs/service"
-	bcproto "github.com/tendermint/tendermint/proto/tendermint/blocksync"
-	"github.com/tendermint/tendermint/types"
+	"github.com/penumbra-zone/tendermint/internal/consensus"
+	"github.com/penumbra-zone/tendermint/internal/eventbus"
+	"github.com/penumbra-zone/tendermint/internal/p2p"
+	"github.com/penumbra-zone/tendermint/internal/p2p/conn"
+	sm "github.com/penumbra-zone/tendermint/internal/state"
+	"github.com/penumbra-zone/tendermint/internal/store"
+	"github.com/penumbra-zone/tendermint/libs/log"
+	"github.com/penumbra-zone/tendermint/libs/service"
+	bcproto "github.com/penumbra-zone/tendermint/proto/tendermint/blocksync"
+	"github.com/penumbra-zone/tendermint/types"
 )
 
 var _ service.Service = (*Reactor)(nil)
@@ -551,7 +551,7 @@ func (r *Reactor) poolRoutine(ctx context.Context, stateSynced bool, blockSyncCh
 			first, second, extCommit := r.pool.PeekTwoBlocks()
 			if first != nil && extCommit == nil &&
 				state.ConsensusParams.ABCI.VoteExtensionsEnabled(first.Height) {
-				// See https://github.com/tendermint/tendermint/pull/8433#discussion_r866790631
+				// See https://github.com/penumbra-zone/tendermint/pull/8433#discussion_r866790631
 				panic(fmt.Errorf("peeked first block without extended commit at height %d - possible node store corruption", first.Height))
 			} else if first == nil || second == nil {
 				// we need to have fetched two consecutive blocks in order to

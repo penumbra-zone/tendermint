@@ -3,13 +3,13 @@ package consensus
 import (
 	"context"
 
-	abciclient "github.com/tendermint/tendermint/abci/client"
-	abci "github.com/tendermint/tendermint/abci/types"
-	"github.com/tendermint/tendermint/internal/libs/clist"
-	"github.com/tendermint/tendermint/internal/mempool"
-	"github.com/tendermint/tendermint/internal/proxy"
-	"github.com/tendermint/tendermint/libs/log"
-	"github.com/tendermint/tendermint/types"
+	abciclient "github.com/penumbra-zone/tendermint/abci/client"
+	abci "github.com/penumbra-zone/tendermint/abci/types"
+	"github.com/penumbra-zone/tendermint/internal/libs/clist"
+	"github.com/penumbra-zone/tendermint/internal/mempool"
+	"github.com/penumbra-zone/tendermint/internal/proxy"
+	"github.com/penumbra-zone/tendermint/libs/log"
+	"github.com/penumbra-zone/tendermint/types"
 )
 
 //-----------------------------------------------------------------------------

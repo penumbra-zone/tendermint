@@ -4,7 +4,7 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/tendermint/tendermint/version"
+	"github.com/penumbra-zone/tendermint/version"
 )
 
 // Rollback overwrites the current Tendermint state (height n) with the most

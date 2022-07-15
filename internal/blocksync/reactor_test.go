@@ -11,22 +11,22 @@ import (
 	"github.com/stretchr/testify/require"
 	dbm "github.com/tendermint/tm-db"
 
-	abciclient "github.com/tendermint/tendermint/abci/client"
-	abci "github.com/tendermint/tendermint/abci/types"
-	"github.com/tendermint/tendermint/config"
-	"github.com/tendermint/tendermint/internal/consensus"
-	"github.com/tendermint/tendermint/internal/eventbus"
-	mpmocks "github.com/tendermint/tendermint/internal/mempool/mocks"
-	"github.com/tendermint/tendermint/internal/p2p"
-	"github.com/tendermint/tendermint/internal/p2p/p2ptest"
-	"github.com/tendermint/tendermint/internal/proxy"
-	sm "github.com/tendermint/tendermint/internal/state"
-	sf "github.com/tendermint/tendermint/internal/state/test/factory"
-	"github.com/tendermint/tendermint/internal/store"
-	"github.com/tendermint/tendermint/internal/test/factory"
-	"github.com/tendermint/tendermint/libs/log"
-	bcproto "github.com/tendermint/tendermint/proto/tendermint/blocksync"
-	"github.com/tendermint/tendermint/types"
+	abciclient "github.com/penumbra-zone/tendermint/abci/client"
+	abci "github.com/penumbra-zone/tendermint/abci/types"
+	"github.com/penumbra-zone/tendermint/config"
+	"github.com/penumbra-zone/tendermint/internal/consensus"
+	"github.com/penumbra-zone/tendermint/internal/eventbus"
+	mpmocks "github.com/penumbra-zone/tendermint/internal/mempool/mocks"
+	"github.com/penumbra-zone/tendermint/internal/p2p"
+	"github.com/penumbra-zone/tendermint/internal/p2p/p2ptest"
+	"github.com/penumbra-zone/tendermint/internal/proxy"
+	sm "github.com/penumbra-zone/tendermint/internal/state"
+	sf "github.com/penumbra-zone/tendermint/internal/state/test/factory"
+	"github.com/penumbra-zone/tendermint/internal/store"
+	"github.com/penumbra-zone/tendermint/internal/test/factory"
+	"github.com/penumbra-zone/tendermint/libs/log"
+	bcproto "github.com/penumbra-zone/tendermint/proto/tendermint/blocksync"
+	"github.com/penumbra-zone/tendermint/types"
 )
 
 type reactorTestSuite struct {
@@ -367,7 +367,7 @@ func TestReactor_NoBlockResponse(t *testing.T) {
 func TestReactor_BadBlockStopsPeer(t *testing.T) {
 	// Ultimately, this should be refactored to be less integration test oriented
 	// and more unit test oriented by simply testing channel sends and receives.
-	// See: https://github.com/tendermint/tendermint/issues/6005
+	// See: https://github.com/penumbra-zone/tendermint/issues/6005
 	t.SkipNow()
 
 	ctx, cancel := context.WithCancel(context.Background())
@@ -412,7 +412,7 @@ func TestReactor_BadBlockStopsPeer(t *testing.T) {
 	// from this peer.
 	//
 	// XXX: This causes a potential race condition.
-	// See: https://github.com/tendermint/tendermint/issues/6005
+	// See: https://github.com/penumbra-zone/tendermint/issues/6005
 	valSet, otherPrivVals := factory.ValidatorSet(ctx, t, 1, 30)
 	otherGenDoc := factory.GenesisDoc(cfg, time.Now(), valSet.Validators, factory.ConsensusParams())
 	newNode := rts.network.MakeNode(ctx, t, p2ptest.NodeOptions{

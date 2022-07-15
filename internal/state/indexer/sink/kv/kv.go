@@ -5,12 +5,12 @@ import (
 
 	dbm "github.com/tendermint/tm-db"
 
-	abci "github.com/tendermint/tendermint/abci/types"
-	"github.com/tendermint/tendermint/internal/pubsub/query"
-	"github.com/tendermint/tendermint/internal/state/indexer"
-	kvb "github.com/tendermint/tendermint/internal/state/indexer/block/kv"
-	kvt "github.com/tendermint/tendermint/internal/state/indexer/tx/kv"
-	"github.com/tendermint/tendermint/types"
+	abci "github.com/penumbra-zone/tendermint/abci/types"
+	"github.com/penumbra-zone/tendermint/internal/pubsub/query"
+	"github.com/penumbra-zone/tendermint/internal/state/indexer"
+	kvb "github.com/penumbra-zone/tendermint/internal/state/indexer/block/kv"
+	kvt "github.com/penumbra-zone/tendermint/internal/state/indexer/tx/kv"
+	"github.com/penumbra-zone/tendermint/types"
 )
 
 var _ indexer.EventSink = (*EventSink)(nil)

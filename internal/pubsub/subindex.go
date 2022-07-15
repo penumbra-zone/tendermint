@@ -1,9 +1,9 @@
 package pubsub
 
 import (
-	abci "github.com/tendermint/tendermint/abci/types"
-	"github.com/tendermint/tendermint/internal/pubsub/query"
-	"github.com/tendermint/tendermint/types"
+	abci "github.com/penumbra-zone/tendermint/abci/types"
+	"github.com/penumbra-zone/tendermint/internal/pubsub/query"
+	"github.com/penumbra-zone/tendermint/types"
 )
 
 // An item to be published to subscribers.

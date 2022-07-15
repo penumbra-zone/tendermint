@@ -13,16 +13,16 @@ import (
 	"github.com/fortytw2/leaktest"
 	"github.com/stretchr/testify/require"
 
-	abciclient "github.com/tendermint/tendermint/abci/client"
-	"github.com/tendermint/tendermint/abci/example/kvstore"
-	abci "github.com/tendermint/tendermint/abci/types"
-	"github.com/tendermint/tendermint/config"
-	"github.com/tendermint/tendermint/internal/p2p"
-	"github.com/tendermint/tendermint/internal/p2p/p2ptest"
-	"github.com/tendermint/tendermint/libs/log"
-	tmrand "github.com/tendermint/tendermint/libs/rand"
-	protomem "github.com/tendermint/tendermint/proto/tendermint/mempool"
-	"github.com/tendermint/tendermint/types"
+	abciclient "github.com/penumbra-zone/tendermint/abci/client"
+	"github.com/penumbra-zone/tendermint/abci/example/kvstore"
+	abci "github.com/penumbra-zone/tendermint/abci/types"
+	"github.com/penumbra-zone/tendermint/config"
+	"github.com/penumbra-zone/tendermint/internal/p2p"
+	"github.com/penumbra-zone/tendermint/internal/p2p/p2ptest"
+	"github.com/penumbra-zone/tendermint/libs/log"
+	tmrand "github.com/penumbra-zone/tendermint/libs/rand"
+	protomem "github.com/penumbra-zone/tendermint/proto/tendermint/mempool"
+	"github.com/penumbra-zone/tendermint/types"
 )
 
 type reactorTestSuite struct {
@@ -215,7 +215,7 @@ func TestReactorBroadcastTxs(t *testing.T) {
 	rts.waitForTxns(t, convertTex(txs), secondaries...)
 }
 
-// regression test for https://github.com/tendermint/tendermint/issues/5408
+// regression test for https://github.com/penumbra-zone/tendermint/issues/5408
 func TestReactorConcurrency(t *testing.T) {
 	numTxs := 10
 	numNodes := 2

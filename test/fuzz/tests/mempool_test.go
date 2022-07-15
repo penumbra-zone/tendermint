@@ -6,11 +6,11 @@ import (
 	"context"
 	"testing"
 
-	abciclient "github.com/tendermint/tendermint/abci/client"
-	"github.com/tendermint/tendermint/abci/example/kvstore"
-	"github.com/tendermint/tendermint/config"
-	"github.com/tendermint/tendermint/internal/mempool"
-	"github.com/tendermint/tendermint/libs/log"
+	abciclient "github.com/penumbra-zone/tendermint/abci/client"
+	"github.com/penumbra-zone/tendermint/abci/example/kvstore"
+	"github.com/penumbra-zone/tendermint/config"
+	"github.com/penumbra-zone/tendermint/internal/mempool"
+	"github.com/penumbra-zone/tendermint/libs/log"
 )
 
 func FuzzMempool(f *testing.F) {

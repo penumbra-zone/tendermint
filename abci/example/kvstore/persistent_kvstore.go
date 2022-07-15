@@ -5,9 +5,9 @@ import (
 
 	dbm "github.com/tendermint/tm-db"
 
-	"github.com/tendermint/tendermint/abci/types"
-	"github.com/tendermint/tendermint/libs/log"
-	cryptoproto "github.com/tendermint/tendermint/proto/tendermint/crypto"
+	"github.com/penumbra-zone/tendermint/abci/types"
+	"github.com/penumbra-zone/tendermint/libs/log"
+	cryptoproto "github.com/penumbra-zone/tendermint/proto/tendermint/crypto"
 )
 
 const (

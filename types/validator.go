@@ -7,10 +7,10 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/tendermint/tendermint/crypto"
-	"github.com/tendermint/tendermint/crypto/encoding"
-	"github.com/tendermint/tendermint/internal/jsontypes"
-	tmproto "github.com/tendermint/tendermint/proto/tendermint/types"
+	"github.com/penumbra-zone/tendermint/crypto"
+	"github.com/penumbra-zone/tendermint/crypto/encoding"
+	"github.com/penumbra-zone/tendermint/internal/jsontypes"
+	tmproto "github.com/penumbra-zone/tendermint/proto/tendermint/types"
 )
 
 // Volatile state for each Validator

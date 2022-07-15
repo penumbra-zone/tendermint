@@ -7,11 +7,11 @@ import (
 	"fmt"
 	"sort"
 
-	abci "github.com/tendermint/tendermint/abci/types"
-	"github.com/tendermint/tendermint/crypto"
-	"github.com/tendermint/tendermint/crypto/merkle"
-	tmbytes "github.com/tendermint/tendermint/libs/bytes"
-	tmproto "github.com/tendermint/tendermint/proto/tendermint/types"
+	abci "github.com/penumbra-zone/tendermint/abci/types"
+	"github.com/penumbra-zone/tendermint/crypto"
+	"github.com/penumbra-zone/tendermint/crypto/merkle"
+	tmbytes "github.com/penumbra-zone/tendermint/libs/bytes"
+	tmproto "github.com/penumbra-zone/tendermint/proto/tendermint/types"
 )
 
 // Tx is an arbitrary byte array.

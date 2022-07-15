@@ -12,16 +12,16 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/tendermint/tendermint/crypto"
-	"github.com/tendermint/tendermint/crypto/merkle"
-	cstypes "github.com/tendermint/tendermint/internal/consensus/types"
-	"github.com/tendermint/tendermint/internal/test/factory"
-	"github.com/tendermint/tendermint/libs/bits"
-	"github.com/tendermint/tendermint/libs/bytes"
-	tmrand "github.com/tendermint/tendermint/libs/rand"
-	tmcons "github.com/tendermint/tendermint/proto/tendermint/consensus"
-	tmproto "github.com/tendermint/tendermint/proto/tendermint/types"
-	"github.com/tendermint/tendermint/types"
+	"github.com/penumbra-zone/tendermint/crypto"
+	"github.com/penumbra-zone/tendermint/crypto/merkle"
+	cstypes "github.com/penumbra-zone/tendermint/internal/consensus/types"
+	"github.com/penumbra-zone/tendermint/internal/test/factory"
+	"github.com/penumbra-zone/tendermint/libs/bits"
+	"github.com/penumbra-zone/tendermint/libs/bytes"
+	tmrand "github.com/penumbra-zone/tendermint/libs/rand"
+	tmcons "github.com/penumbra-zone/tendermint/proto/tendermint/consensus"
+	tmproto "github.com/penumbra-zone/tendermint/proto/tendermint/types"
+	"github.com/penumbra-zone/tendermint/types"
 )
 
 func TestMsgToProto(t *testing.T) {

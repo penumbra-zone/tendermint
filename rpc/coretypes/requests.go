@@ -5,9 +5,9 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/tendermint/tendermint/internal/jsontypes"
-	"github.com/tendermint/tendermint/libs/bytes"
-	"github.com/tendermint/tendermint/types"
+	"github.com/penumbra-zone/tendermint/internal/jsontypes"
+	"github.com/penumbra-zone/tendermint/libs/bytes"
+	"github.com/penumbra-zone/tendermint/types"
 )
 
 type RequestSubscribe struct {

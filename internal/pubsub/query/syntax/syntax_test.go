@@ -6,7 +6,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/tendermint/tendermint/internal/pubsub/query/syntax"
+	"github.com/penumbra-zone/tendermint/internal/pubsub/query/syntax"
 )
 
 func TestScanner(t *testing.T) {

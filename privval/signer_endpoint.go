@@ -7,10 +7,10 @@ import (
 	"sync"
 	"time"
 
-	"github.com/tendermint/tendermint/internal/libs/protoio"
-	"github.com/tendermint/tendermint/libs/log"
-	"github.com/tendermint/tendermint/libs/service"
-	privvalproto "github.com/tendermint/tendermint/proto/tendermint/privval"
+	"github.com/penumbra-zone/tendermint/internal/libs/protoio"
+	"github.com/penumbra-zone/tendermint/libs/log"
+	"github.com/penumbra-zone/tendermint/libs/service"
+	privvalproto "github.com/penumbra-zone/tendermint/proto/tendermint/privval"
 )
 
 const (

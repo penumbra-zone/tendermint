@@ -6,9 +6,9 @@ import (
 
 	"github.com/google/uuid"
 
-	abci "github.com/tendermint/tendermint/abci/types"
-	"github.com/tendermint/tendermint/internal/libs/queue"
-	"github.com/tendermint/tendermint/types"
+	abci "github.com/penumbra-zone/tendermint/abci/types"
+	"github.com/penumbra-zone/tendermint/internal/libs/queue"
+	"github.com/penumbra-zone/tendermint/types"
 )
 
 var (

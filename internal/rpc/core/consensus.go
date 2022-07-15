@@ -3,8 +3,8 @@ package core
 import (
 	"context"
 
-	tmmath "github.com/tendermint/tendermint/libs/math"
-	"github.com/tendermint/tendermint/rpc/coretypes"
+	tmmath "github.com/penumbra-zone/tendermint/libs/math"
+	"github.com/penumbra-zone/tendermint/rpc/coretypes"
 )
 
 // Validators gets the validator set at the given block height.

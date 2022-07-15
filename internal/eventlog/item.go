@@ -3,9 +3,9 @@ package eventlog
 import (
 	"strings"
 
-	abci "github.com/tendermint/tendermint/abci/types"
-	"github.com/tendermint/tendermint/internal/eventlog/cursor"
-	"github.com/tendermint/tendermint/types"
+	abci "github.com/penumbra-zone/tendermint/abci/types"
+	"github.com/penumbra-zone/tendermint/internal/eventlog/cursor"
+	"github.com/penumbra-zone/tendermint/types"
 )
 
 // Cached constants for the pieces of reserved event names.

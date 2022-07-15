@@ -5,7 +5,7 @@ import (
 
 	"github.com/gogo/protobuf/proto"
 
-	"github.com/tendermint/tendermint/internal/libs/protoio"
+	"github.com/penumbra-zone/tendermint/internal/libs/protoio"
 )
 
 const (

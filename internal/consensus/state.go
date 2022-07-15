@@ -15,23 +15,23 @@ import (
 
 	"github.com/gogo/protobuf/proto"
 
-	"github.com/tendermint/tendermint/config"
-	"github.com/tendermint/tendermint/crypto"
-	cstypes "github.com/tendermint/tendermint/internal/consensus/types"
-	"github.com/tendermint/tendermint/internal/eventbus"
-	"github.com/tendermint/tendermint/internal/jsontypes"
-	"github.com/tendermint/tendermint/internal/libs/autofile"
-	sm "github.com/tendermint/tendermint/internal/state"
-	tmevents "github.com/tendermint/tendermint/libs/events"
-	"github.com/tendermint/tendermint/libs/log"
-	tmmath "github.com/tendermint/tendermint/libs/math"
-	tmos "github.com/tendermint/tendermint/libs/os"
-	"github.com/tendermint/tendermint/libs/service"
-	tmtime "github.com/tendermint/tendermint/libs/time"
-	"github.com/tendermint/tendermint/privval"
-	tmgrpc "github.com/tendermint/tendermint/privval/grpc"
-	tmproto "github.com/tendermint/tendermint/proto/tendermint/types"
-	"github.com/tendermint/tendermint/types"
+	"github.com/penumbra-zone/tendermint/config"
+	"github.com/penumbra-zone/tendermint/crypto"
+	cstypes "github.com/penumbra-zone/tendermint/internal/consensus/types"
+	"github.com/penumbra-zone/tendermint/internal/eventbus"
+	"github.com/penumbra-zone/tendermint/internal/jsontypes"
+	"github.com/penumbra-zone/tendermint/internal/libs/autofile"
+	sm "github.com/penumbra-zone/tendermint/internal/state"
+	tmevents "github.com/penumbra-zone/tendermint/libs/events"
+	"github.com/penumbra-zone/tendermint/libs/log"
+	tmmath "github.com/penumbra-zone/tendermint/libs/math"
+	tmos "github.com/penumbra-zone/tendermint/libs/os"
+	"github.com/penumbra-zone/tendermint/libs/service"
+	tmtime "github.com/penumbra-zone/tendermint/libs/time"
+	"github.com/penumbra-zone/tendermint/privval"
+	tmgrpc "github.com/penumbra-zone/tendermint/privval/grpc"
+	tmproto "github.com/penumbra-zone/tendermint/proto/tendermint/types"
+	"github.com/penumbra-zone/tendermint/types"
 )
 
 // Consensus sentinel errors
@@ -1063,7 +1063,7 @@ func (cs *State) handleMsg(ctx context.Context, mi msgInfo) {
 		// We probably don't want to stop the peer here. The vote does not
 		// necessarily comes from a malicious peer but can be just broadcasted by
 		// a typical peer.
-		// https://github.com/tendermint/tendermint/issues/1281
+		// https://github.com/penumbra-zone/tendermint/issues/1281
 
 		// NOTE: the vote is broadcast to peers by the reactor listening
 		// for vote events
@@ -2317,7 +2317,7 @@ func (cs *State) tryAddVote(ctx context.Context, vote *types.Vote, peerID types.
 			// 1) bad peer OR
 			// 2) not a bad peer? this can also err sometimes with "Unexpected step" OR
 			// 3) tmkms use with multiple validators connecting to a single tmkms instance
-			//		(https://github.com/tendermint/tendermint/issues/3839).
+			//		(https://github.com/penumbra-zone/tendermint/issues/3839).
 			cs.logger.Info("failed attempting to add vote", "err", err)
 			return added, ErrAddingVote
 		}
@@ -2392,7 +2392,7 @@ func (cs *State) addVote(
 			myAddr = cs.privValidatorPubKey.Address()
 		}
 		// Verify VoteExtension if precommit and not nil
-		// https://github.com/tendermint/tendermint/issues/8487
+		// https://github.com/penumbra-zone/tendermint/issues/8487
 		if vote.Type == tmproto.PrecommitType && !vote.BlockID.IsNil() &&
 			!bytes.Equal(vote.ValidatorAddress, myAddr) { // Skip the VerifyVoteExtension call if the vote was issued by this validator.
 
@@ -2417,7 +2417,7 @@ func (cs *State) addVote(
 		//
 		// TODO punish a peer if it sent a vote with an extension when the feature
 		// is disabled on the network.
-		// https://github.com/tendermint/tendermint/issues/8565
+		// https://github.com/penumbra-zone/tendermint/issues/8565
 		if stripped := vote.StripExtension(); stripped {
 			cs.logger.Error("vote included extension data but vote extensions are not enabled", "peer", peerID)
 		}

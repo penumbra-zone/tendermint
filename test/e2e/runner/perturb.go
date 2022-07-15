@@ -5,10 +5,10 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/tendermint/tendermint/libs/log"
-	rpctypes "github.com/tendermint/tendermint/rpc/coretypes"
-	e2e "github.com/tendermint/tendermint/test/e2e/pkg"
-	"github.com/tendermint/tendermint/test/e2e/pkg/infra"
+	"github.com/penumbra-zone/tendermint/libs/log"
+	rpctypes "github.com/penumbra-zone/tendermint/rpc/coretypes"
+	e2e "github.com/penumbra-zone/tendermint/test/e2e/pkg"
+	"github.com/penumbra-zone/tendermint/test/e2e/pkg/infra"
 )
 
 // Perturbs a running testnet.

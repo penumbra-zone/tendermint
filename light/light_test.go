@@ -8,14 +8,14 @@ import (
 	"github.com/stretchr/testify/require"
 	dbm "github.com/tendermint/tm-db"
 
-	"github.com/tendermint/tendermint/abci/example/kvstore"
-	"github.com/tendermint/tendermint/libs/log"
-	"github.com/tendermint/tendermint/light"
-	"github.com/tendermint/tendermint/light/provider"
-	httpp "github.com/tendermint/tendermint/light/provider/http"
-	dbs "github.com/tendermint/tendermint/light/store/db"
-	rpctest "github.com/tendermint/tendermint/rpc/test"
-	"github.com/tendermint/tendermint/types"
+	"github.com/penumbra-zone/tendermint/abci/example/kvstore"
+	"github.com/penumbra-zone/tendermint/libs/log"
+	"github.com/penumbra-zone/tendermint/light"
+	"github.com/penumbra-zone/tendermint/light/provider"
+	httpp "github.com/penumbra-zone/tendermint/light/provider/http"
+	dbs "github.com/penumbra-zone/tendermint/light/store/db"
+	rpctest "github.com/penumbra-zone/tendermint/rpc/test"
+	"github.com/penumbra-zone/tendermint/types"
 )
 
 // NOTE: these are ports of the tests from example_test.go but

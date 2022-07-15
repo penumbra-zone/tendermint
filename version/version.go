@@ -1,6 +1,6 @@
 package version
 
-import tmversion "github.com/tendermint/tendermint/proto/tendermint/version"
+import tmversion "github.com/penumbra-zone/tendermint/proto/tendermint/version"
 
 var (
 	TMVersion = TMVersionDefault

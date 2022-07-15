@@ -6,11 +6,11 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/tendermint/tendermint/crypto/ed25519"
-	"github.com/tendermint/tendermint/crypto/secp256k1"
-	"github.com/tendermint/tendermint/crypto/sr25519"
-	tmstrings "github.com/tendermint/tendermint/internal/libs/strings"
-	tmproto "github.com/tendermint/tendermint/proto/tendermint/types"
+	"github.com/penumbra-zone/tendermint/crypto/ed25519"
+	"github.com/penumbra-zone/tendermint/crypto/secp256k1"
+	"github.com/penumbra-zone/tendermint/crypto/sr25519"
+	tmstrings "github.com/penumbra-zone/tendermint/internal/libs/strings"
+	tmproto "github.com/penumbra-zone/tendermint/proto/tendermint/types"
 )
 
 const (
@@ -81,7 +81,7 @@ type VersionParams struct {
 // SynchronyParams influence the validity of block timestamps.
 // For more information on the relationship of the synchrony parameters to
 // block validity, see the Proposer-Based Timestamps specification:
-// https://github.com/tendermint/tendermint/blob/master/spec/consensus/proposer-based-timestamp/README.md
+// https://github.com/penumbra-zone/tendermint/blob/master/spec/consensus/proposer-based-timestamp/README.md
 type SynchronyParams struct {
 	Precision    time.Duration `json:"precision,string"`
 	MessageDelay time.Duration `json:"message_delay,string"`
@@ -161,7 +161,7 @@ func DefaultSynchronyParams() SynchronyParams {
 	return SynchronyParams{
 		// 505ms was selected as the default to enable chains that have validators in
 		// mixed leap-second handling environments.
-		// For more information, see: https://github.com/tendermint/tendermint/issues/7724
+		// For more information, see: https://github.com/penumbra-zone/tendermint/issues/7724
 		Precision:    505 * time.Millisecond,
 		MessageDelay: 12 * time.Second,
 	}
@@ -171,7 +171,7 @@ func DefaultSynchronyParams() SynchronyParams {
 // with the Tendermint defined default values.
 func (s SynchronyParams) SynchronyParamsOrDefaults() SynchronyParams {
 	// TODO: Remove this method and all uses once development on v0.37 begins.
-	// See: https://github.com/tendermint/tendermint/issues/8187
+	// See: https://github.com/penumbra-zone/tendermint/issues/8187
 
 	defaults := DefaultSynchronyParams()
 	if s.Precision == 0 {
@@ -207,7 +207,7 @@ func DefaultABCIParams() ABCIParams {
 // with the Tendermint defined default values.
 func (t TimeoutParams) TimeoutParamsOrDefaults() TimeoutParams {
 	// TODO: Remove this method and all uses once development on v0.37 begins.
-	// See: https://github.com/tendermint/tendermint/issues/8187
+	// See: https://github.com/penumbra-zone/tendermint/issues/8187
 
 	defaults := DefaultTimeoutParams()
 	if t.Propose == 0 {

@@ -11,13 +11,13 @@ import (
 	"strings"
 	"time"
 
-	abci "github.com/tendermint/tendermint/abci/types"
-	"github.com/tendermint/tendermint/crypto"
-	"github.com/tendermint/tendermint/crypto/merkle"
-	"github.com/tendermint/tendermint/internal/jsontypes"
-	tmmath "github.com/tendermint/tendermint/libs/math"
-	tmrand "github.com/tendermint/tendermint/libs/rand"
-	tmproto "github.com/tendermint/tendermint/proto/tendermint/types"
+	abci "github.com/penumbra-zone/tendermint/abci/types"
+	"github.com/penumbra-zone/tendermint/crypto"
+	"github.com/penumbra-zone/tendermint/crypto/merkle"
+	"github.com/penumbra-zone/tendermint/internal/jsontypes"
+	tmmath "github.com/penumbra-zone/tendermint/libs/math"
+	tmrand "github.com/penumbra-zone/tendermint/libs/rand"
+	tmproto "github.com/penumbra-zone/tendermint/proto/tendermint/types"
 )
 
 // Evidence represents any provable malicious activity by a validator.

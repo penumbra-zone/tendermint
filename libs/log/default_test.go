@@ -5,7 +5,7 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/tendermint/tendermint/libs/log"
+	"github.com/penumbra-zone/tendermint/libs/log"
 )
 
 func TestNewDefaultLogger(t *testing.T) {

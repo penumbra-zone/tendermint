@@ -5,8 +5,8 @@ import (
 	"sync"
 	"time"
 
-	"github.com/tendermint/tendermint/internal/libs/clist"
-	"github.com/tendermint/tendermint/types"
+	"github.com/penumbra-zone/tendermint/internal/libs/clist"
+	"github.com/penumbra-zone/tendermint/types"
 )
 
 // TxInfo are parameters that get passed when attempting to add a tx to the

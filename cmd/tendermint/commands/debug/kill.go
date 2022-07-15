@@ -13,10 +13,10 @@ import (
 	"github.com/spf13/cobra"
 	"github.com/spf13/viper"
 
-	"github.com/tendermint/tendermint/config"
-	"github.com/tendermint/tendermint/libs/cli"
-	"github.com/tendermint/tendermint/libs/log"
-	rpchttp "github.com/tendermint/tendermint/rpc/client/http"
+	"github.com/penumbra-zone/tendermint/config"
+	"github.com/penumbra-zone/tendermint/libs/cli"
+	"github.com/penumbra-zone/tendermint/libs/log"
+	rpchttp "github.com/penumbra-zone/tendermint/rpc/client/http"
 )
 
 func getKillCmd(logger log.Logger) *cobra.Command {

@@ -5,11 +5,11 @@ import (
 	"fmt"
 	"sort"
 
-	tmquery "github.com/tendermint/tendermint/internal/pubsub/query"
-	"github.com/tendermint/tendermint/internal/state/indexer"
-	tmmath "github.com/tendermint/tendermint/libs/math"
-	"github.com/tendermint/tendermint/rpc/coretypes"
-	"github.com/tendermint/tendermint/types"
+	tmquery "github.com/penumbra-zone/tendermint/internal/pubsub/query"
+	"github.com/penumbra-zone/tendermint/internal/state/indexer"
+	tmmath "github.com/penumbra-zone/tendermint/libs/math"
+	"github.com/penumbra-zone/tendermint/rpc/coretypes"
+	"github.com/penumbra-zone/tendermint/types"
 )
 
 // BlockchainInfo gets block headers for minHeight <= height <= maxHeight.

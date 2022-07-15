@@ -7,8 +7,8 @@ import (
 	"net"
 	"time"
 
-	"github.com/tendermint/tendermint/crypto"
-	"github.com/tendermint/tendermint/types"
+	"github.com/penumbra-zone/tendermint/crypto"
+	"github.com/penumbra-zone/tendermint/types"
 )
 
 //go:generate ../../scripts/mockery_generate.sh Transport|Connection

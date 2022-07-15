@@ -6,8 +6,8 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/tendermint/tendermint/libs/log"
-	"github.com/tendermint/tendermint/test/e2e/pkg/infra"
+	"github.com/penumbra-zone/tendermint/libs/log"
+	"github.com/penumbra-zone/tendermint/test/e2e/pkg/infra"
 )
 
 // Cleanup destroys all infrastructure and removes all generated testnet files.

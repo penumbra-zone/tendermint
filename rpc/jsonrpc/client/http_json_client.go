@@ -14,7 +14,7 @@ import (
 	"sync"
 	"time"
 
-	rpctypes "github.com/tendermint/tendermint/rpc/jsonrpc/types"
+	rpctypes "github.com/penumbra-zone/tendermint/rpc/jsonrpc/types"
 )
 
 const (

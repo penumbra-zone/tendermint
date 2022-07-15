@@ -11,10 +11,10 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/tendermint/tendermint/abci/example/kvstore"
-	rpchttp "github.com/tendermint/tendermint/rpc/client/http"
-	"github.com/tendermint/tendermint/rpc/coretypes"
-	rpctest "github.com/tendermint/tendermint/rpc/test"
+	"github.com/penumbra-zone/tendermint/abci/example/kvstore"
+	rpchttp "github.com/penumbra-zone/tendermint/rpc/client/http"
+	"github.com/penumbra-zone/tendermint/rpc/coretypes"
+	rpctest "github.com/penumbra-zone/tendermint/rpc/test"
 )
 
 func TestHTTPSimple(t *testing.T) {

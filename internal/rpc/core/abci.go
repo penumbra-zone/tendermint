@@ -3,9 +3,9 @@ package core
 import (
 	"context"
 
-	abci "github.com/tendermint/tendermint/abci/types"
-	"github.com/tendermint/tendermint/internal/proxy"
-	"github.com/tendermint/tendermint/rpc/coretypes"
+	abci "github.com/penumbra-zone/tendermint/abci/types"
+	"github.com/penumbra-zone/tendermint/internal/proxy"
+	"github.com/penumbra-zone/tendermint/rpc/coretypes"
 )
 
 // ABCIQuery queries the application for some information.

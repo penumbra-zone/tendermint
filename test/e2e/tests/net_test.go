@@ -6,8 +6,8 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	e2e "github.com/tendermint/tendermint/test/e2e/pkg"
-	"github.com/tendermint/tendermint/types"
+	e2e "github.com/penumbra-zone/tendermint/test/e2e/pkg"
+	"github.com/penumbra-zone/tendermint/types"
 )
 
 // Tests that all nodes have peered with each other, regardless of discovery method.
@@ -18,7 +18,7 @@ func TestNet_Peers(t *testing.T) {
 		netInfo, err := client.NetInfo(ctx)
 		require.NoError(t, err)
 
-		// FIXME: https://github.com/tendermint/tendermint/issues/8848
+		// FIXME: https://github.com/penumbra-zone/tendermint/issues/8848
 		// We should be able to assert that we can discover all peers in a network
 		expectedPeers := len(node.Testnet.Nodes)
 		peers := make(map[string]*e2e.Node, 0)
@@ -45,7 +45,7 @@ func TestNet_Peers(t *testing.T) {
 			seen[peer.Name] = true
 		}
 
-		// FIXME: https://github.com/tendermint/tendermint/issues/8848
+		// FIXME: https://github.com/penumbra-zone/tendermint/issues/8848
 		// We should be able to assert that we can discover all peers in a network
 		// for name := range seen {
 		// 	require.True(t, seen[name], "node %v not peered with %v", node.Name, name)

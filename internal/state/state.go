@@ -9,12 +9,12 @@ import (
 
 	"github.com/gogo/protobuf/proto"
 
-	tmtime "github.com/tendermint/tendermint/libs/time"
+	tmtime "github.com/penumbra-zone/tendermint/libs/time"
 
-	tmstate "github.com/tendermint/tendermint/proto/tendermint/state"
-	tmversion "github.com/tendermint/tendermint/proto/tendermint/version"
-	"github.com/tendermint/tendermint/types"
-	"github.com/tendermint/tendermint/version"
+	tmstate "github.com/penumbra-zone/tendermint/proto/tendermint/state"
+	tmversion "github.com/penumbra-zone/tendermint/proto/tendermint/version"
+	"github.com/penumbra-zone/tendermint/types"
+	"github.com/penumbra-zone/tendermint/version"
 )
 
 //-----------------------------------------------------------------------------

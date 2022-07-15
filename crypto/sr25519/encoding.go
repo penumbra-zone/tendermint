@@ -1,7 +1,7 @@
 package sr25519
 
 import (
-	"github.com/tendermint/tendermint/internal/jsontypes"
+	"github.com/penumbra-zone/tendermint/internal/jsontypes"
 )
 
 const (

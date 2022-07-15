@@ -11,18 +11,18 @@ import (
 
 	dbm "github.com/tendermint/tm-db"
 
-	"github.com/tendermint/tendermint/internal/p2p"
-	sm "github.com/tendermint/tendermint/internal/state"
-	"github.com/tendermint/tendermint/libs/log"
-	"github.com/tendermint/tendermint/light"
-	lightprovider "github.com/tendermint/tendermint/light/provider"
-	lighthttp "github.com/tendermint/tendermint/light/provider/http"
-	lightrpc "github.com/tendermint/tendermint/light/rpc"
-	lightdb "github.com/tendermint/tendermint/light/store/db"
-	ssproto "github.com/tendermint/tendermint/proto/tendermint/statesync"
-	rpchttp "github.com/tendermint/tendermint/rpc/client/http"
-	"github.com/tendermint/tendermint/types"
-	"github.com/tendermint/tendermint/version"
+	"github.com/penumbra-zone/tendermint/internal/p2p"
+	sm "github.com/penumbra-zone/tendermint/internal/state"
+	"github.com/penumbra-zone/tendermint/libs/log"
+	"github.com/penumbra-zone/tendermint/light"
+	lightprovider "github.com/penumbra-zone/tendermint/light/provider"
+	lighthttp "github.com/penumbra-zone/tendermint/light/provider/http"
+	lightrpc "github.com/penumbra-zone/tendermint/light/rpc"
+	lightdb "github.com/penumbra-zone/tendermint/light/store/db"
+	ssproto "github.com/penumbra-zone/tendermint/proto/tendermint/statesync"
+	rpchttp "github.com/penumbra-zone/tendermint/rpc/client/http"
+	"github.com/penumbra-zone/tendermint/types"
+	"github.com/penumbra-zone/tendermint/version"
 )
 
 //go:generate ../../scripts/mockery_generate.sh StateProvider

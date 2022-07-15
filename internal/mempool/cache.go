@@ -4,7 +4,7 @@ import (
 	"container/list"
 	"sync"
 
-	"github.com/tendermint/tendermint/types"
+	"github.com/penumbra-zone/tendermint/types"
 )
 
 // TxCache defines an interface for raw transaction caching in a mempool.

@@ -6,10 +6,10 @@ import (
 
 	"github.com/spf13/cobra"
 
-	"github.com/tendermint/tendermint/config"
-	"github.com/tendermint/tendermint/libs/log"
-	"github.com/tendermint/tendermint/scripts/keymigrate"
-	"github.com/tendermint/tendermint/scripts/scmigrate"
+	"github.com/penumbra-zone/tendermint/config"
+	"github.com/penumbra-zone/tendermint/libs/log"
+	"github.com/penumbra-zone/tendermint/scripts/keymigrate"
+	"github.com/penumbra-zone/tendermint/scripts/scmigrate"
 )
 
 func MakeKeyMigrateCommand(conf *config.Config, logger log.Logger) *cobra.Command {
